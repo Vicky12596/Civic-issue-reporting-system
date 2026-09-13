@@ -1,0 +1,91 @@
+/* ---------------------------------------------------------------
+   CivicConnect design tokens
+   A government-portal identity: deep municipal blue + signal amber
+   for status/priority, warm off-white paper background. Avoids the
+   generic "AI cream + terracotta" look in favor of something that
+   reads as official, trustworthy, and legible at a glance.
+----------------------------------------------------------------*/
+:root {
+  --cc-navy: #0B4F6C;
+  --cc-navy-dark: #073B52;
+  --cc-teal: #1B998B;
+  --cc-amber: #E8A33D;
+  --cc-red: #C6473C;
+  --cc-paper: #F6F5F1;
+  --cc-ink: #1D2226;
+  --cc-ink-soft: #5A6570;
+  --cc-border: #E1DED4;
+  --cc-white: #FFFFFF;
+
+  --cc-font-display: 'Georgia', 'Iowan Old Style', serif;
+  --cc-font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --cc-radius: 6px;
+  --cc-shadow: 0 2px 10px rgba(11, 79, 108, 0.08);
+}
+
+[data-theme='dark'] {
+  --cc-paper: #10171C;
+  --cc-ink: #EDEFF1;
+  --cc-ink-soft: #A6B0B8;
+  --cc-border: #263038;
+  --cc-white: #17222A;
+}
+
+body {
+  background-color: var(--cc-paper);
+  color: var(--cc-ink);
+  font-family: var(--cc-font-body);
+}
+
+h1, h2, h3, .brand-font {
+  font-family: var(--cc-font-display);
+  letter-spacing: -0.01em;
+}
+
+.navbar-civic {
+  background-color: var(--cc-navy);
+}
+
+.btn-civic {
+  background-color: var(--cc-navy);
+  border-color: var(--cc-navy);
+  color: #fff;
+}
+.btn-civic:hover {
+  background-color: var(--cc-navy-dark);
+  color: #fff;
+}
+
+.btn-civic-outline {
+  background: transparent;
+  border: 1px solid var(--cc-navy);
+  color: var(--cc-navy);
+}
+
+.card-civic {
+  background: var(--cc-white);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius);
+  box-shadow: var(--cc-shadow);
+}
+
+.badge-status-PENDING     { background: #9AA5AD; }
+.badge-status-VERIFIED    { background: var(--cc-teal); }
+.badge-status-ASSIGNED    { background: #6C7FC9; }
+.badge-status-IN_PROGRESS { background: var(--cc-amber); color: #1D2226; }
+.badge-status-RESOLVED    { background: #3E9C5C; }
+.badge-status-CLOSED      { background: #4A4E52; }
+.badge-status-REJECTED    { background: var(--cc-red); }
+
+.badge-priority-LOW      { background: #A9C7B0; color: #1D2226; }
+.badge-priority-MEDIUM   { background: var(--cc-amber); color: #1D2226; }
+.badge-priority-HIGH     { background: #E07B3E; }
+.badge-priority-CRITICAL { background: var(--cc-red); }
+
+.leaflet-map-container {
+  height: 420px;
+  width: 100%;
+  border-radius: var(--cc-radius);
+  border: 1px solid var(--cc-border);
+}
