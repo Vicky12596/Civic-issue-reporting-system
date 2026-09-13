@@ -1,0 +1,16 @@
+{
+  "name": "civic-issue-system",
+  "version": "1.0.0",
+  "description": "A full-stack platform for citizens to report civic issues (road damage, garbage, water leakage, streetlights, etc.), track them through a public status timeline, vote and comment, and for local-authority admins to triage, assign, and resolve them.",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
